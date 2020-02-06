@@ -2,7 +2,7 @@
   "name": "font-awesome-sass-loader",
   "description": "font-awesome (sass) package for webpack",
   "license": "MIT",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "main": "index.js",
   "loader": "index.loader.js",
   "keywords": [
@@ -22,10 +22,13 @@
     "style-loader": "*"
   },
   "peerDependencies": {
-    "font-awesome": "^4.4.0"
+    "font-awesome": "^4.7.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/francisbesset/font-awesome-sass-loader.git"
+  },
+  "devDependencies": {
+    "font-awesome": "^4.7.0"
   }
 }

@@ -14,9 +14,16 @@ module.exports.pitch = function (remainingRequest) {
   var config = require(configFilePath);
 
   var styleLoaders = config.styleLoaders || ['style-loader', 'css-loader', 'sass-loader'];
-  if (config.extractStyles) {
+
+  if (undefined !== config.extractStyles) {
+    var extractModule = '';
+    if (config.extractStyles === true) {
+      extractModule = 'extract-text-webpack-plugin';
+    } else {
+      extractModule = config.extractStyles;
+    }
     styleLoaders = [
-      require('extract-text-webpack-plugin').loader().loader + '?{"omit":1,"remove":true}',
+      require(extractModule).loader().loader + '?{"omit":1,"remove":true}',
       styleLoaders.join('!'),
     ];
   }

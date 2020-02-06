@@ -1,5 +1,5 @@
 module.exports = {
-  extractStyles: true,
+  extractStyles: 'mini-css-extract-plugin',
 
   styles: {
     "mixins": true,

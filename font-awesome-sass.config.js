@@ -3,7 +3,8 @@ module.exports = {
   //styleLoaders: ["style-loader", "css-loader", "sass-loader"],
 
   // If you want to use the ExtractTextPlugin
-  //extractStyles: true,
+  //extractStyles: 'extract-text-webpack-plugin',
+  //extractStyles: 'mini-css-extract-plugin',
 
   // Use fontAwesomeCustomizations to utilize other sass variables defined in
   // _variables.scss file. This is useful to set one customization value based
