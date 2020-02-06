@@ -23,7 +23,7 @@ module.exports.pitch = function (remainingRequest) {
       extractModule = config.extractStyles;
     }
     styleLoaders = [
-      require(extractModule).loader().loader + '?{"omit":1,"remove":true}',
+      require(extractModule).loader + '?{"omit":1,"remove":true}',
       styleLoaders.join('!'),
     ];
   }
